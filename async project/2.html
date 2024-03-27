@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai or javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+   // const saydate = function(){
+   //     console.log("prity", Date.now());
+   // }
+    //setInterval(saydate, 2000)
+
+    // with 3rd parameter
+
+   // const saydate = function(str){
+   //     console.log(str, Date.now());
+   // }
+    //setInterval(saydate, 1000, "hi") 
+
+    //to stop there is clearinterval 
+
+    
+   // const intervalId = setInterval(saydate, 1000, "hi") 
+    // clearInterval(intervalId)
+ 
+   const start = document.querySelector('#start')
+   const stop = document.querySelector('#stop')
+   let interval;
+   const Sayname = (name) =>{
+    console.log(name, Date.now());
+   }
+   start.addEventListener('click', function(){
+   console.log("START")
+    interval = setInterval(Sayname, 1000, "prity")
+   })
+   stop.addEventListener('click', function(){
+    clearInterval(interval)
+    console.log("STOPPED");
+   })
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai or code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // its a handler of js 
+    const sayprity = function() {
+        console.log("prity");
+    }
+    const changetext = function(){
+        document.querySelector('h1').innerHTML= "best js series"
+    }
+    
+     const changeme = setTimeout(changetext , 2000)
+    document.querySelector('#stop').addEventListener('click', function(){git 
+        clearTimeout(changeme)
+        console.log("Stopped")
+    })
+</script>
+</html>

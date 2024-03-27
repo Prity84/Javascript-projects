@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            gap: 10px;
+            height: 100vh;
+            color: rgb(189, 20, 48);
+        }
+
+        button {
+            padding: 7px 20px;
+            margin-top: 9px;
+            color: rgb(189, 20, 48);
+            border: none;
+        }
+        button:hover{
+            background-color: blue;
+            cursor: pointer;
+
+        }
+        .container{
+            background-color: black;
+            height: 140px;
+        }
+        .container h1{
+            font-size: 35px;
+            margin: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Start should change the Background color every second</h1>
+        <div><button id="start"> Start </button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+</body>
+<script>
+    // Generate Random Color
+    const randomcolor = function(){
+        const hex = " 0123456789ABCDEF"
+        let color = '#'
+        for( let i = 0;  i< 6 ; i++){
+            color += hex[Math.floor(Math.random() * 16)];   // min value floor
+        
+        }
+        return color;
+    }
+
+
+   // console.log(Math.random() * 16);  decimal values takes
+   //console.log(randomcolor()) ; 
+   
+   let interval;                                                // it will take global declarations part of SCOPE in js
+   const startChangingColor = function(){
+
+    // after one second it will automatically change then we do this  but here bg color is not defined so first we defined
+      //interval = setInterval(changebgColor, 1000);
+
+      
+      interval = setInterval(changebgColor, 1000);
+
+      //setInterval(changebgColor, 1000);
+
+
+    function changebgColor(){
+    document.body.style.backgroundColor = randomcolor();
+
+
+    }
+
+    // when we click then it will change the color
+   // document.body.style.backgroundColor = randomcolor();
+
+
+   };
+   const stopChangingColor = function(){
+    clearInterval(interval);
+    //interval = null;   
+    // if we define null then we chechk its fun  after work we done clear the interval and also we done the value null
+   }
+   document.querySelector("#start").addEventListener('click', startChangingColor);
+   document.querySelector("#stop").addEventListener('click', stopChangingColor);
+
+</script>
+
+</html>

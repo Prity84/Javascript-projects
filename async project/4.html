@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async project</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #2b2a2a;
+        }
+        nav{
+            background-color: #ccc;
+            height:10vh;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+        }
+        a{
+            background-color: #0c2988;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            border-color: 1px solid rgb(149, 110, 19);
+            text-decoration: none;
+        }
+        #insert{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://www.linkedin.com/in/prity-kushwaha84/">Linkedin</a>
+    </nav>
+    <div class="projects">
+        <div id="insert">
+            <div class="key">Press the key and watch magic</div>
+        </div>
+    </div>
+</body>
+<script>
+    const insert = document.getElementById('insert')
+    window.addEventListener('keydown', (e) => {
+        insert.innerHTML = ` 
+        <div class = 'color'> 
+            <table>
+            <tr>
+              <th>key</th>
+              <th>keycode</th>
+              <th>code</th>
+            </tr>
+            <tr>
+              <td> ${e.key === "" ?"Space" : e.key}</td>
+              <td>${e.keyCode}</td>
+              <td>${e.code}</td>
+            </tr>
+           
+          </table>
+        </div>
+        `
+    }) 
+</script>
+</html>
