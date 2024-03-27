@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 20px;
+    text-align: center;
+
+}
+.about {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    height: 50%;
+}
+ .container h2 {
+    color: #333;
+    text-align: center;
+}
+p {
+    color: #555;
+    line-height: 1.6;
+    font-family: var(--font2);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.main{
+    background-color: #f4f4f4;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+
+}
+.experience{
+    margin-top: 20px;
+}
+.experience h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.experience p{
+    margin-top: 10px;
+    text-align: justify;
+}
+.heading h1{
+    font-weight: 200;
+    font-size: 25px;
+    font-family: var(--font2);
+    margin-top: 20px;
+}
+.main-left{
+    padding: 8px 12px;
+}
+.main-left h2{
+   
+    font-family: var(--font2);
+    font-size: 23px;
+    margin-top: 23px;
+}
+.main-left p{
+    text-align: justify;
+    font-size: 12px;
+}
+
+.footer-about{
+    background-color: black;   
+    margin-top: 40px;
+    text-align: center;
+}
+.footer-about p{
+    color: white;
+    text-align: center;
+}
+.footer-about a{
+    color: white;
+    text-decoration: none;
+}
+.accordion{
+    background-color: white;
+    padding: 5px 17px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.icon{
+    margin-right: 15px;
+
+}
+
+.answer{
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+.answer.active{
+    max-height: 200px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .heading h1{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .main-left{
+        text-align: center;
+    }
+}
+
+

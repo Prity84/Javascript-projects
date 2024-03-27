@@ -1,0 +1,94 @@
+.contact-content {
+    display: block;
+    font-family: var(--font2);
+    height: 100%;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    background-color: #f4f4f4;
+}
+.contact-container h2{
+    margin-top: 20px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-information img{
+    height: 270px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.social-links{
+    margin-top: 20px;
+}
+.social-links a{
+    text-decoration: none;
+    padding: 12px;
+    font-family:var(--font1);
+}
+.about-inp{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+.section{
+    padding: 5px 20px;
+    font-family: var(--font2);
+}
+#Query{
+    padding: 10px 20px;
+    height: 100px;
+    text-align: center;
+}
+.Submit{
+    margin: auto;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.Submit:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 0.7s;
+
+}
+.Reset{
+    margin: auto;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 7px;
+    background: #706868;
+    color: aliceblue;
+    margin-top: 10px;
+}
+.Reset:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 0.7s;
+
+}
+@media screen and (max-width:1200px) {
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-information{
+       text-align: center;
+    }
+    .left-information img{
+        height:150px ;
+    }
+    .social-links a{
+        display: flex;
+        justify-content: center;
+    }
+   
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --main-bg-color: brown;
+    --font1: "Poppins", sans-serif;
+    --font2: "Roboto", sans-serif;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.max-width-1 {
+    max-width: 80%;
+}
+
+.max-width-2 {
+    max-width: 60%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-color: black;
+    font-family: var(--font2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.form-input {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-family: var(--font2);
+    border-radius: 8px;
+    border-color: black;
+}
+.my-2{
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
