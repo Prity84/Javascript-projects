@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(133, 76, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    background-color: rgb(179, 174, 170);
+    border-radius: 7px;
+    padding: 15px;
+    height: 500px;
+    width: 600px;
+   
+}
+
+#item {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 2px rgb(211, 71, 141);
+    font-weight: bold;
+    color: black;
+    display: block;
+
+}
+
+#item::placeholder {
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+}
+#to-do-box {
+    margin-top: 20px;
+    list-style: none;
+
+}
+
+#to-do-box li {
+    list-style: none;
+    margin-top: 10px;
+    background-color: rgb(21, 21, 21);
+    padding: 8px;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 5px;
+    user-select: none;
+
+}
+
+#to-do-box li i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.done{
+    text-decoration: line-through;
+    color: white;
+    background-color: rgb(117, 122, 122) !important;
+}
