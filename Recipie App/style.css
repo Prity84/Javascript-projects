@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background: linear-gradient(to right, lightblue, rgb(206, 206, 149));
+    object-fit: cover;
+
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.recipie-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+}
+.recipie-item{
+    height: 550px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+    border: 2px solid rgb(216, 31, 161);
+    box-shadow: 0 0 5px rgba(120, 56, 225, 0.2);
+    transition: background-color .3s ease-in-out;
+
+
+
+
+}
+
+.recipie-item:hover img{
+    transform: scale(1.05);
+
+
+}
+
+.recipie-item img{
+    height: 220px;
+    width: 300px;
+    border-radius: 7px;
+    margin-top: 15px;
+    transition: transform .3s ease-in-out;
+
+
+
+}
+.recipie-name{
+    font-weight: bold;
+    font-size: 20px;
+
+    
+}
+.recipie-cuisine{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recipie-meal-type{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px ;
+    font-size: 24px;
+}
+.recipie-ingredients{
+    text-align: justify;
+    /* letter-spacing: 0.5px; */
+    margin:10px 15px ;
+
+}
+.recipie-rating{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.recipie-tags{
+    margin-bottom: 5px;
+}
+
+
+.recipie-details-button{
+    padding: 7px 100px;
+    background-color: rgb(177, 90, 148);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+
+}
+.recipie-details-button:hover{
+    background-color: aqua;
+    color: black;
+
+}
+@media screen and (max-width : 1200px) {
+    .recipie-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .recipie-item img{
+        height: 100px;
+        width: 100px;
+       
+    }  
+
+    .recipie-item{
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .recipie-ingredients{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .recipie-details-button{
+        padding: 5px 10px;
+    }
+    
+}
+@media screen and (max-width : 120px) {
+    .recipie-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
