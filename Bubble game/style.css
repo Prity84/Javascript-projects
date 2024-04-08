@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(156, 187, 187);
+}
+#panel{
+    overflow: hidden;
+    background-color: rgb(103, 159, 141);
+    border-radius: 10px;
+    width: 70%;
+    height: 80%;
+}
+#ptop{
+    padding: 0px 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:black;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(170, 206, 180);
+}
+.box{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.one{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    
+}
+#pbtn{
+    width: 100%;
+    height: calc(100%-80px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: bisque;
+    color: black;
+    font-weight: 700;
+}
+.bubble:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
